@@ -2,6 +2,6 @@
 Jai tween module
 
 # Build
-cd example
-jai example.jai
-example
+- cd example
+- jai example.jai
+- example
