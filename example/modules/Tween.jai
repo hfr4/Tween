@@ -125,10 +125,10 @@ in_elastic :: (x: float) -> float #expand {
 }
 
 in_bounce :: (x: float) -> float #expand {
-    if      x < 0.09090 return 0.01563 - 7.5625 * pow(0.04545 - x, 2);
-    else if x < 0.27272 return 0.06250 - 7.5625 * pow(0.18181 - x, 2);
-    else if x < 0.63636 return 0.25000 - 7.5625 * pow(0.45454 - x, 2);
-    else                return 1.00000 - 7.5625 * pow(1.00000 - x, 2);
+    if      x < 0.09090 return 0.01563 - 7.5625 * pow(0.04545 - x, 2.0);
+    else if x < 0.27272 return 0.06250 - 7.5625 * pow(0.18181 - x, 2.0);
+    else if x < 0.63636 return 0.25000 - 7.5625 * pow(0.45454 - x, 2.0);
+    else                return 1.00000 - 7.5625 * pow(1.00000 - x, 2.0);
 }
 
 out_quad :: (x: float) -> float #expand { 
